@@ -9,6 +9,9 @@ const port = 5000;
 
 app.use(cors());
 
+//testing server
+app.get('/', (req, res) => res.send("Serve is up and running...."));
+
 app.use('/api', route);
 
 app.listen(port, () => {
